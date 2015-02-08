@@ -1,8 +1,7 @@
 <jsp:include page="header.jsp" />
 <!-- Banner -->
 <section id="banner">
-	<h2>Alpha</h2>
-	<p>Another fine responsive site template freebie by HTML5 UP.</p>
+	<h2>Online Web Directory</h2>
 	<ul class="actions">
 		<li><a href="#" class="button special">Sign Up</a></li>
 		<li><a href="#" class="button">Learn More</a></li>
@@ -14,14 +13,12 @@
 
 	<section class="box special">
 		<header class="major">
-			<h2>
-				Introducing the ultimate mobile app <br /> for doing stuff with
-				your phone
-			</h2>
+			<h2>Introduction</h2>
 			<p>
-				Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus
-				nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis
-				massa.
+				Online Web Directory is a directory for linking to other websites
+				and to categorize those links <br />Here one can find quality sites
+				based on categories. <br /> The links are displayed on basis of
+				whole content of the website rather than one page or set of keywords
 			</p>
 		</header>
 	</section>
@@ -30,57 +27,87 @@
 		<div class="features-row">
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
-				<h3>Magna etiam</h3>
-			</section>
-			<section>
-				<span class="icon major fa-area-chart accent3"></span>
-				<h3>Ipsum dolor</h3>
+				<h3>
+					<a href=/getsites?category= <%="business"%>>Business</a>
+				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
-				<h3>Ipsum dolor</h3>
+				<h3>
+					<a href=/getsites?category= <%="education"%>>Education</a>
+				</h3>
 			</section>
-		</div>
-		<div class="features-row">
 			<section>
 				<span class="icon major fa-cloud accent5"></span>
-				<h3>Sed feugiat</h3>
+				<h3>
+					<a href=/getsites?category= <%="employment"%>>Employment</a>
+				</h3>
+			</section>
+		</div>
+		<div class="features-row">
+
+			<section>
+				<span class="icon major fa-cloud accent5"></span>
+				<h3>
+					<a href=/getsites?category= <%="entertainment"%>>Entertainment</a>
+				</h3>
 			</section>
 			<section>
-				<span class="icon major fa-lock accent6"></span>
-				<h3>Enim phasellus</h3>
+				<span class="icon major fa-bolt accent2"></span>
+				<h3>
+					<a href=/getsites?category= <%="fitnesshealth"%>>Fitness Health</a>
+				</h3>
 			</section>
 			<section>
-				<span class="icon major fa-lock accent7"></span>
-				<h3>Enim phasellus</h3>
+				<span class="icon major fa-area-chart accent4"></span>
+				<h3>
+					<a href=/getsites?category= <%="graphics design"%>>Graphics	Design</a>
+				</h3>
 			</section>
+
+
+		</div>
+		<div class="features-row">
+			<section>
+				<span class="icon major fa-area-chart accent4"></span>
+				<h3>
+					<a href=/getsites?category= <%="internet"%>>Internet</a>
+				</h3>
+			</section>
+			<section>
+				<span class="icon major fa-cloud accent5"></span>
+				<h3>
+					<a href=/getsites?category= <%="itknowledge"%>>IT knowledge</a>
+				</h3>
+			</section>
+			<section>
+				<span class="icon major fa-bolt accent2"></span>
+				<h3>
+					<a href=/getsites?category= <%="music"%>>Music</a>
+				</h3>
+			</section>
+
 		</div>
 		<div class="features-row">
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
-				<h3>Magna etiam</h3>
+				<h3>
+					<a href=/getsites?category= <%="news"%>>News</a>
+				</h3>
 			</section>
-			<section>
-				<span class="icon major fa-area-chart accent3"></span>
-				<h3>Ipsum dolor</h3>
-			</section>
-			<section>
-				<span class="icon major fa-area-chart accent4"></span>
-				<h3>Ipsum dolor</h3>
-			</section>
-		</div>
-		<div class="features-row">
-			<section>
-				<span class="icon major fa-bolt accent2"></span>
-				<h3>Magna etiam</h3>
-			</section>
-			<section>
-				<span class="icon major fa-area-chart accent3"></span>
-				<h3>Ipsum dolor</h3>
-			</section>
+
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
-				<h3><a href=/getsites?category=<%="Other"%>>Other</a></h3>
+				<h3>
+					<a href=/getsites?category= <%="realestate"%>>Real Estate/Property</a>
+				</h3>
+			</section>
+
+			<section>
+				<span class="icon major fa-cloud accent5"></span>
+				<h3>
+					<a href=/getsites?category= <%="other"%>>Other</a>
+				</h3>
 			</section>
 		</div>
 	</section>
@@ -91,12 +118,12 @@
 			<section class="box special">
 				<span class="image featured"><img src="images/pic02.jpg"
 					alt="" /></span>
-				<h3>Sed lorem adipiscing</h3>
-				<p>Integer volutpat ante et accumsan commophasellus sed aliquam
-					feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan
-					dolore magna aliquam veroeros.</p>
+				<h3>BackLinks</h3>
+				<p> Backlinks are incoming links to a website from another websites. 
+				Another benefit of submitting website in online web directory is to increase backlinks of your website.
+				</p>
 				<ul class="actions">
-					<li><a href="#" class="button alt">Learn More</a></li>
+					<li><a href="http://en.wikipedia.org/wiki/Backlink" class="button alt" target="_blank">Learn More</a></li>
 				</ul>
 			</section>
 
@@ -106,12 +133,12 @@
 			<section class="box special">
 				<span class="image featured"><img src="images/pic03.jpg"
 					alt="" /></span>
-				<h3>Accumsan integer</h3>
-				<p>Integer volutpat ante et accumsan commophasellus sed aliquam
-					feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan
-					dolore magna aliquam veroeros.</p>
+				<h3>PageRank</h3>
+				<p>Increasing backlinks results in good Page Rank of the website. 
+				Page Rank indicates the popularity of your website.
+				</p>
 				<ul class="actions">
-					<li><a href="#" class="button alt">Learn More</a></li>
+					<li><a href="http://en.wikipedia.org/wiki/PageRank" class="button alt" target="_blank">Learn More</a></li>
 				</ul>
 			</section>
 
