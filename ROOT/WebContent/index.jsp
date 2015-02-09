@@ -28,19 +28,19 @@
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
 				<h3>
-					<a href=/getsites?category= <%="business"%>>Business</a>
+					<a href=/getsites?category=<%="business"%>>Business</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
 				<h3>
-					<a href=/getsites?category= <%="education"%>>Education</a>
+					<a href=/getsites?category=<%="education"%>>Education</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-cloud accent5"></span>
 				<h3>
-					<a href=/getsites?category= <%="employment"%>>Employment</a>
+					<a href=/getsites?category=<%="employment"%>>Employment</a>
 				</h3>
 			</section>
 		</div>
@@ -49,19 +49,19 @@
 			<section>
 				<span class="icon major fa-cloud accent5"></span>
 				<h3>
-					<a href=/getsites?category= <%="entertainment"%>>Entertainment</a>
+					<a href=/getsites?category=<%="entertainment"%>>Entertainment</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
 				<h3>
-					<a href=/getsites?category= <%="fitnesshealth"%>>Fitness Health</a>
+					<a href=/getsites?category=<%="fitnesshealth"%>>Fitness Health</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
 				<h3>
-					<a href=/getsites?category= <%="graphics design"%>>Graphics	Design</a>
+					<a href=/getsites?category=<%="graphicsdesign"%>>Graphics	Design</a>
 				</h3>
 			</section>
 
@@ -71,19 +71,19 @@
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
 				<h3>
-					<a href=/getsites?category= <%="internet"%>>Internet</a>
+					<a href=/getsites?category=<%="internet"%>>Internet</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-cloud accent5"></span>
 				<h3>
-					<a href=/getsites?category= <%="itknowledge"%>>IT knowledge</a>
+					<a href=/getsites?category=<%="itknowledge"%>>IT knowledge</a>
 				</h3>
 			</section>
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
 				<h3>
-					<a href=/getsites?category= <%="music"%>>Music</a>
+					<a href=/getsites?category=<%="music"%>>Music</a>
 				</h3>
 			</section>
 
@@ -92,21 +92,21 @@
 			<section>
 				<span class="icon major fa-bolt accent2"></span>
 				<h3>
-					<a href=/getsites?category= <%="news"%>>News</a>
+					<a href=/getsites?category=<%="news"%>>News</a>
 				</h3>
 			</section>
 
 			<section>
 				<span class="icon major fa-area-chart accent4"></span>
 				<h3>
-					<a href=/getsites?category= <%="realestate"%>>Real Estate/Property</a>
+					<a href=/getsites?category=<%="realestate"%>>Real Estate/Property</a>
 				</h3>
 			</section>
 
 			<section>
 				<span class="icon major fa-cloud accent5"></span>
 				<h3>
-					<a href=/getsites?category= <%="other"%>>Other</a>
+					<a href=/getsites?category=<%="other"%>>Other</a>
 				</h3>
 			</section>
 		</div>

@@ -21,23 +21,31 @@ for(Cookie cookie : cookies){
 				<input type="hidden" name="username" id="username" value=<%=username%> >
 				<div class="row uniform 50%">
 					<div class="12u">
-						<input type="text" name="url" id="url" value=""
-							placeholder="url" />
+						<input type="url" name="url" id="url" value=""
+							placeholder="url" required/>
 					</div>
 				</div>
 			<div class="row uniform 50%">
 				<div class="12u">
 					<input type="text" name="title" id="title" value=""
-						placeholder="Title" />
+						placeholder="Title" required/>
 				</div>
 			</div>
 			<div class="row uniform 50%">
 				<div class="6u 12u(mobilep)">
 					<select name="category">
-						<option value="Education">Education</option>
-						<option value="Travel">Travel</option>
-						<option value="Organization">Organization</option>
-						<option value="Other">Other</option>
+						<option value="business">Business</option>
+						<option value="education">Education</option>
+						<option value="employment">Employment</option>
+						<option value="entertainment">Entertainment</option>
+						<option value="fitnesshealth">Fitness/Health</option>
+						<option value="graphicsdesign">Graphics/Design</option>
+						<option value="internet">Internet</option>
+						<option value="itknowledge">IT Knowledge</option>
+						<option value="music">Music</option>
+						<option value="news">News</option>
+						<option value="realestate">Real Estate/Property</option>
+						<option value="other">Other</option>
 					</select>
 				</div>
 			</div>
@@ -45,7 +53,7 @@ for(Cookie cookie : cookies){
 			<div class="row uniform 50%">
 				<div class="12u">
 					<textarea name="description" id="description"
-						placeholder="Site description" rows="6"></textarea>
+						placeholder="Site description" rows="6" required></textarea>
 				</div>
 			</div>
 			<div class="row uniform">

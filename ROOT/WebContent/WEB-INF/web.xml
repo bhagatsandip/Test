@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee">
+<display-name>Sites</display-name>
+  <servlet>
+    <servlet-name>SitesServlet</servlet-name>
+    <servlet-class>servlets.SitesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SitesServlet</servlet-name>
+    <url-pattern>/getsites</url-pattern>
+  </servlet-mapping>
+</web-app>
