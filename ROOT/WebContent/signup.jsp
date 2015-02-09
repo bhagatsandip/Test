@@ -10,37 +10,37 @@
 				<div class="row uniform 50%">
 					<div class="6u 12u(mobilep)">
 						<input type="text" name="username" id="username" value=""
-							placeholder="Name" />
+							placeholder="Name" required/>
 					</div>
 				</div>
 				<div class="row uniform 50%">
 					<div class="12u">
 						<input type="email" name="email" id="email" value=""
-							placeholder="Email" />
+							required placeholder="Enter a valid email address" />
 					</div>
 				</div>
 				<div class="row uniform 50%">
 					<div class="6u 12u(mobilep)">
 						<input type="text" name="firstname" id="firstname" value=""
-							placeholder="First Name" />
+							placeholder="First Name" required/>
 					</div>
 				</div>
 				<div class="row uniform 50%">
 					<div class="6u 12u(mobilep)">
 						<input type="text" name="lastname" id="lastname" value=""
-							placeholder="Last Name" />
+							placeholder="Last Name" required/>
 					</div>
 				</div>
 				<div class="row uniform 50%">
 					<div class="6u 12u(mobilep)">
 						<input type="password" name="password" id="password" value=""
-							placeholder="Password" />
+							placeholder="Password" required/>
 					</div>
 				</div>
 				<div class="row uniform 50%">
 					<div class="6u 12u(mobilep)">
 						<input type="password" name="repassword" id="repassword" value=""
-							placeholder="Reenter Password" />
+							placeholder="Reenter Password" required/>
 					</div>
 				</div>
 				<div class="row uniform 50%">
