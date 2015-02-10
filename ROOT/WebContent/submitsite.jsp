@@ -1,34 +1,38 @@
 <jsp:include page="header.jsp" />
-	<!-- Main -->
-	<%
-String username = null;
-Cookie[] cookies = request.getCookies();
-if(cookies !=null){
-for(Cookie cookie : cookies){
-    if(cookie.getName().equals("user")) username = cookie.getValue();
-}
-}
+<!-- Main -->
+<%
+	String username = null;
+	Cookie[] cookies = request.getCookies();
+	if (cookies != null) {
+		for (Cookie cookie : cookies) {
+			if (cookie.getName().equals("user"))
+				username = cookie.getValue();
+		}
+	}
 %>
-	
-	<section id="main" class="container 75%">
-	<%if(username != null && username!="") {%>
-		<header>
-			<h2>Submit your site.</h2>
-			<p>Submit site to Increase Backlinks..</p>
-		</header>
-		<div class="box">
-			<form method="post" action="/submitsite">
-				<input type="hidden" name="username" id="username" value=<%=username%> >
-				<div class="row uniform 50%">
-					<div class="12u">
-						<input type="url" name="url" id="url" value=""
-							placeholder="url" required/>
-					</div>
+
+<section id="main" class="container 75%">
+	<%
+		if (username != null && username != "") {
+	%>
+	<header>
+		<h2>Submit your site.</h2>
+		<p>Submit site to Increase Backlinks..</p>
+	</header>
+	<div class="box">
+		<form method="post" action="/submitsite">
+			<input type="hidden" name="username" id="username"
+				value=<%=username%>>
+			<div class="row uniform 50%">
+				<div class="12u">
+					<input type="url" name="url" id="url" value="" placeholder="url"
+						required />
 				</div>
+			</div>
 			<div class="row uniform 50%">
 				<div class="12u">
 					<input type="text" name="title" id="title" value=""
-						placeholder="Title" required/>
+						placeholder="Title" required />
 				</div>
 			</div>
 			<div class="row uniform 50%">
@@ -51,11 +55,18 @@ for(Cookie cookie : cookies){
 			</div>
 
 			<div class="row uniform 50%">
-				<div class="12u">
-					<textarea name="description" id="description"
-						placeholder="Site description" rows="6" required></textarea>
+				<div class="12u">					
+						<textarea name="description" id="description"
+							placeholder="Site description" rows="6" required
+							onKeyDown="limitText(this.form.description,this.form.countdown,300);"
+							onKeyUp="limitText(this.form.description,this.form.countdown,300);"></textarea>
+						<font size="1">(Maximum characters: 300)<br> You have
+							<input readonly type="text" name="countdown" size="3" value="300">
+							characters left.
+						</font>
 				</div>
 			</div>
+
 			<div class="row uniform">
 				<div class="12u">
 					<ul class="actions align-center">
@@ -64,13 +75,16 @@ for(Cookie cookie : cookies){
 				</div>
 			</div>
 		</form>
-		</div>
-		<%} else { %>
-			<header>
-			<h2>Submit your site.</h2>
-			<p>Login to Submit site..</p>
-		</header>
-		<%} %>
-	</section>
-	<jsp:include page="footer.jsp" />
-	
+	</div>
+	<%
+		} else {
+	%>
+	<header>
+		<h2>Submit your site.</h2>
+		<p>Login to Submit site..</p>
+	</header>
+	<%
+		}
+	%>
+</section>
+<jsp:include page="footer.jsp" />
