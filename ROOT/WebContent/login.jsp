@@ -20,13 +20,13 @@
 					</div>
 				</div>
 
-				<div class="row uniform 50%">
-					<div class="6u 12u(mobilep)">
-						<div class="button">
-							<input type="submit" value="Login">
-						</div>
-					</div>
+				<div class="row uniform">
+				<div class="12u">
+					<ul class="actions align-center">
+						<li><input type="submit" value="Login" /></li>
+					</ul>
 				</div>
+			</div>
 			</form>
 		</div>
 	</section>

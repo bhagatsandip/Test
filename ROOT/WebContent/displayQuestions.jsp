@@ -7,10 +7,16 @@
 </script> -->
 <section id="banner">
 	<h2>Online Web Directory</h2>
-	<ul class="actions">
-		<li><a href="#" class="button special">Sign Up</a></li>
-		<li><a href="#" class="button">Learn More</a></li>
-	</ul>
+	<p>Directory with websites of all categories at one place</p>
+	
+	<br>
+	<span class='st_facebook_large' displayText='Facebook'></span>
+	<span class='st_googleplus_large' displayText='Google +'></span>
+	<span class='st_twitter_large' displayText='Tweet'></span>
+	<span class='st_linkedin_large' displayText='LinkedIn'></span>
+	<span class='st_whatsapp_large' displayText='WhatsApp'></span>
+	<span class='st_pinterest_large' displayText='Pinterest'></span>
+	<span class='st_email_large' displayText='Email'></span>
 </section>
 <section id="main" class="container 75%">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -20,7 +26,7 @@
 				
 				<div class="displayblocktitle">${questions.title}</div>
 				<%-- <div class="previewbox"><iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="http://${questions.url}" width = "200px" height = "200px" frameborder="0" scrolling="no" id="iframe" onload='javascript:resizeIframe(this);'></iframe></div> --%>
-				<div class="displayblockurl"><a href="http://${questions.url}" target="_blank">${questions.url}</a></div>
+				<div class="displayblockurl"><a href="${questions.url}" target="_blank">${questions.url}</a></div>
 				<div class="displayblockdes">${questions.description}</div>
 				<hr>
 				

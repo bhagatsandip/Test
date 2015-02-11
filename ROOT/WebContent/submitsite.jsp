@@ -17,7 +17,6 @@
 	%>
 	<header>
 		<h2>Submit your site.</h2>
-		<p>Submit site to Increase Backlinks..</p>
 	</header>
 	<div class="box">
 		<form method="post" action="/submitsite">
@@ -28,6 +27,7 @@
 					<input type="url" name="url" id="url" value="" placeholder="url"
 						required />
 				</div>
+				<font size="3">eg. http://www.olwebdirectory.com</font>
 			</div>
 			<div class="row uniform 50%">
 				<div class="12u">
@@ -60,11 +60,11 @@
 							placeholder="Site description" rows="6" required
 							onKeyDown="limitText(this.form.description,this.form.countdown,300);"
 							onKeyUp="limitText(this.form.description,this.form.countdown,300);"></textarea>
-						<font size="1">(Maximum characters: 300)<br> You have
-							<input readonly type="text" name="countdown" size="3" value="300">
-							characters left.
-						</font>
 				</div>
+						<font size="2">(Maximum characters: 300)<!-- <br> You have
+							<input readonly type="text" name="countdown" size="3" value="300">
+							characters left. -->
+						</font>
 			</div>
 
 			<div class="row uniform">

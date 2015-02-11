@@ -8,9 +8,9 @@ public class ConnectionFactory {
     //static reference to itself
     private static ConnectionFactory instance = 
                 new ConnectionFactory();
-    String url = "jdbc:mysql://127.0.0.1:3306/olwebdirectory";
-    String user = "root";
-    String password = "";
+    String url = "jdbc:mysql://127.7.254.2:3306/olwebdirectory";
+    String user = "adminVEDaqfs";
+    String password = "S8KSYXVF8ED-";
     String driverClass = "com.mysql.jdbc.Driver"; 
      
     //private constructor

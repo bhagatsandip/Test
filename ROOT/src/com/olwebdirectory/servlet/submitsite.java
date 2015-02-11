@@ -5,6 +5,8 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,13 +17,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import db.ConnectionFactory;
+
 /**
  * Servlet implementation class submitsite
  */
 @WebServlet("/submitsite")
 public class submitsite extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	Connection connection; 
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -30,6 +35,14 @@ public class submitsite extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+    private static Connection getConnection() 
+            throws SQLException, 
+                ClassNotFoundException 
+    {
+        Connection con = ConnectionFactory.
+                getInstance().getConnection();
+        return con;
+    }
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -43,8 +56,7 @@ public class submitsite extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter pw = response.getWriter();  
-		String connectionURL = "jdbc:mysql://127.0.0.1:3306/olwebdirectory";// newData is the database  
-		Connection connection;  
+
 		try{  
 			DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		String username = request.getParameter("username"); 
@@ -55,10 +67,9 @@ public class submitsite extends HttpServlet {
 		String submitteddate = dateFormat.format(date);
 		String description = request.getParameter("description");  
 
-
-		Class.forName("com.mysql.jdbc.Driver");  
-		connection = DriverManager.getConnection(connectionURL, "root", "");  
-		PreparedStatement pst = connection.prepareStatement("insert into sites (Username, url, Title, Category, Date, Description) values(?,?,?,?,?,?)");  
+		
+		connection = getConnection();
+		PreparedStatement pst = connection.prepareStatement("insert into "+category+" (Username, url, Title, Category, Date, Description) values(?,?,?,?,?,?)");  
 		pst.setString(1,username);  
 		pst.setString(2,url);
 		pst.setString(3,title);
@@ -68,20 +79,23 @@ public class submitsite extends HttpServlet {
 
 		int i = pst.executeUpdate();  
 		if(i!=0){  
-
 			response.sendRedirect("/");
-			System.out.println("Site Submitted");
-
 		}  
 		else{  
-		//pw.println("failed to submit data"); 
 			response.sendRedirect("#");
-			System.out.println("Site Submit Failed");
 		}  
 		}  
 		catch (Exception e){  
 		pw.println(e);  
-		} 
+		}finally
+        {
+            try {
+                if(connection != null)
+                    connection.close();
+                } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } 
 	}
 
 }

@@ -59,7 +59,7 @@ if(username == null) response.sendRedirect("login.jsp");
 		<nav id="nav">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="" class="icon fa-angle-down">Layouts</a>
+<!-- 				<li><a href="" class="icon fa-angle-down">Layouts</a>
 					<ul>
 						<li><a href="generic.jsp">Generic</a></li>
 						<li><a href="contact.jsp">Contact</a></li>
@@ -71,7 +71,7 @@ if(username == null) response.sendRedirect("login.jsp");
 								<li><a href="#">Option Three</a></li>
 								<li><a href="#">Option Four</a></li>
 							</ul></li>
-					</ul></li>
+					</ul></li> -->
 				<li><a href="submitsite.jsp"><font color="#e89980">Submit
 							your Site</font></a></li>
 				<%if(username != null && username !="") {%>
